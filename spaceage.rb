@@ -1,0 +1,2 @@
+class Spaceage
+end
