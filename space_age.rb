@@ -11,6 +11,13 @@ class SpaceAge
 
   def initialize(seconds)
     @seconds = seconds
+    @earth   = 365.25000000
+    @venus   =   0.61519726
+    @mars    =   1.88081580
+    @jupiter =  11.86261500
+    @saturn  =  29.44749800
+    @uranus  =  84.01684600
+    @neptune = 164.79132000
   end
 
 	def seconds
@@ -18,7 +25,7 @@ class SpaceAge
 	end
 	
   def on_earth
-    seconds_in_a_year = 365.25 * 24 * 60 * 60
+    seconds_in_a_year = @earth * 24 * 60 * 60
     puts seconds_in_a_year*31
   end
 
