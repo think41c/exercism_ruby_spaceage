@@ -1,12 +1,12 @@
 class SpaceAge
 
+  attr_reader :seconds
   def initialize(seconds)
     @seconds      = seconds
     @hours_in_day = 24
     @mins_in_hour = 60
     @sec_in_min   = 60 
     yearly_orbit_in_days
-
   end
 
   def yearly_orbit_in_days
@@ -23,9 +23,9 @@ class SpaceAge
     @seconds / @sec_in_min / @mins_in_hour / @hours_in_day
   end
 
-	def seconds
-    @seconds  
-	end
+	# def seconds
+ #    @seconds  
+	# end
 	
   def on_earth
     seconds_to_days / @earth
