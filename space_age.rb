@@ -25,11 +25,12 @@ class SpaceAge
 	end
 	
   def on_earth
-    seconds_in_a_year = @earth * 24 * 60 * 60
-    puts seconds_in_a_year*31
+    @seconds / 60 / 60 / 24 / @earth
   end
+
+
 
 end
 
-a = SpaceAge.new(2)
+a = SpaceAge.new(1000000000)
 a.on_earth
