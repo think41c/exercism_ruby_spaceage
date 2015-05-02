@@ -10,6 +10,10 @@ class SpaceAge
     yearly_orbit_in_days
   end
 
+  def seconds_to_days
+    @seconds / @sec_in_min / @mins_in_hour / @hours_in_day
+  end
+
   def yearly_orbit_in_days
     @earth   = 365.25000000
     @venus   =   0.61519726 * @earth
@@ -19,10 +23,6 @@ class SpaceAge
     @uranus  =  84.01684600 * @earth
     @neptune = 164.79132000 * @earth
     @mercury =   0.24084670 * @earth
-  end
-
-  def seconds_to_days
-    @seconds / @sec_in_min / @mins_in_hour / @hours_in_day
   end
 
   def on_mercury 
@@ -35,6 +35,10 @@ class SpaceAge
 
   def on_venus
     seconds_to_days / @venus
+  end
+
+  def on_mars 
+    seconds_to_days / @mars
   end
 
 end
