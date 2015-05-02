@@ -27,13 +27,16 @@ class SpaceAge
 
   def on_mercury 
     seconds_to_days / @mercury
-    #280.88 
-
   end
 
   def on_earth
     seconds_to_days / @earth
   end
+
+  def on_venus
+    seconds_to_days / @venus
+  end
+
 end
 
 a = SpaceAge.new(2_134_835_688)
