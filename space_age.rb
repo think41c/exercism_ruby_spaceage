@@ -15,12 +15,16 @@ class SpaceAge
     @neptune = 164.79132000
   end
 
+  def seconds_to_days
+    @seconds / 60 / 60 / 24
+  end
+
 	def seconds
-    @seconds   
+    @seconds  
 	end
 	
   def on_earth
-    @seconds / 60 / 60 / 24 / @earth
+    seconds_to_days / @earth
   end
 end
 
