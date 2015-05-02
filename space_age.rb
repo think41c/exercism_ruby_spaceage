@@ -41,4 +41,20 @@ class SpaceAge
     seconds_to_days / @mars
   end
 
+  def on_jupiter
+    seconds_to_days / @jupiter
+  end
+
+  def on_saturn
+    seconds_to_days / @saturn
+  end
+
+  def on_uranus
+    seconds_to_days / @uranus
+  end
+
+  def on_neptune
+    seconds_to_days / @neptune
+  end
+
 end
