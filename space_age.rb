@@ -1,8 +1,12 @@
 class SpaceAge
 
   def initialize(seconds)
-    @seconds = seconds
+    @seconds      = seconds
+    @hours_in_day = 24
+    @mins_in_hour = 60
+    @sec_in_min   = 60 
     yearly_orbit_in_days
+
   end
 
   def yearly_orbit_in_days
@@ -16,7 +20,7 @@ class SpaceAge
   end
 
   def seconds_to_days
-    @seconds / 60 / 60 / 24
+    @seconds / @sec_in_min / @mins_in_hour / @hours_in_day
   end
 
 	def seconds
