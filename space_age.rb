@@ -38,7 +38,3 @@ class SpaceAge
   end
 
 end
-
-a = SpaceAge.new(2_134_835_688)
-puts a.on_earth
-puts a.on_mercury
