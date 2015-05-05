@@ -15,46 +15,46 @@ class SpaceAge
   end
 
   def yearly_orbit_in_days
-    @earth   = 365.25000000
-    @venus   =   0.61519726 * @earth
-    @mars    =   1.88081580 * @earth
-    @jupiter =  11.86261500 * @earth
-    @saturn  =  29.44749800 * @earth
-    @uranus  =  84.01684600 * @earth
-    @neptune = 164.79132000 * @earth
-    @mercury =   0.24084670 * @earth
+    @EARTH   = 365.25000000
+    @VENUS   =   0.61519726 * @EARTH
+    @MARS    =   1.88081580 * @EARTH
+    @JUPITER =  11.86261500 * @EARTH
+    @SATURN  =  29.44749800 * @EARTH
+    @URANUS  =  84.01684600 * @EARTH
+    @NEPTUNE = 164.79132000 * @EARTH
+    @MERCURY =   0.24084670 * @EARTH
   end
 
   def on_mercury 
-    seconds_to_days / @mercury
+    seconds_to_days / @MERCURY
   end
 
   def on_earth
-    seconds_to_days / @earth
+    seconds_to_days / @EARTH
   end
 
   def on_venus
-    seconds_to_days / @venus
+    seconds_to_days / @VENUS
   end
 
   def on_mars 
-    seconds_to_days / @mars
+    seconds_to_days / @MARS
   end
 
   def on_jupiter
-    seconds_to_days / @jupiter
+    seconds_to_days / @JUPITER
   end
 
   def on_saturn
-    seconds_to_days / @saturn
+    seconds_to_days / @SATURN
   end
 
   def on_uranus
-    seconds_to_days / @uranus
+    seconds_to_days / @URANUS
   end
 
   def on_neptune
-    seconds_to_days / @neptune
+    seconds_to_days / @NEPTUNE
   end
 
 end
